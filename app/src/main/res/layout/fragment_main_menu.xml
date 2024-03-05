@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainMenuFragment" android:background="@color/pink">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp" android:id="@+id/layout">
+
+        <TextView
+                android:text="@string/minigames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.496" android:textSize="48sp" android:textColor="@color/white"
+                app:layout_constraintVertical_bias="0.313"/>
+        <TextView
+                android:text="@string/tic_tac_toe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView2"
+                android:textSize="24sp" android:textColor="@color/white"
+                app:layout_constraintStart_toEndOf="@+id/ticTacToeButton"
+                android:layout_marginStart="28dp" app:layout_constraintTop_toBottomOf="@+id/textView"
+                android:layout_marginTop="80dp" app:layout_constraintEnd_toEndOf="@+id/textView"/>
+        <TextView
+                android:text="@string/number_gen"
+                android:layout_width="106dp"
+                android:layout_height="63dp" android:id="@+id/textView3"
+                android:textSize="24sp" android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/numberGenButton"
+                android:layout_marginEnd="12dp" app:layout_constraintTop_toBottomOf="@+id/ticTacToeButton"
+                android:layout_marginTop="40dp" app:layout_constraintStart_toStartOf="@+id/ticTacToeButton"
+                app:layout_constraintHorizontal_bias="0.0"/>
+        <ImageButton
+                android:src="@drawable/tic_tac_icon"
+                android:layout_width="82dp"
+                android:layout_height="79dp" android:id="@+id/ticTacToeButton"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/tic_tac_toe"
+                android:background="#00FFFFFF"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                android:layout_marginTop="56dp" app:layout_constraintStart_toStartOf="@+id/textView"
+        />
+        <ImageButton
+                android:src="@drawable/nb_icon"
+                android:layout_width="82dp"
+                android:layout_height="79dp" android:id="@+id/numberGenButton"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/tic_tac_toe"
+                android:background="#00FFFFFF"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                android:layout_marginTop="56dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView2"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

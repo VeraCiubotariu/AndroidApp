@@ -37,8 +37,28 @@ class TicTacToe {
         return getPositions(0);
     }
 
-    public fun setPosition(index: Int, player: Int){
+    private fun setPosition(index: Int, player: Int){
         positions[index] = player;
+    }
+
+    /**
+     * returns false, if the positions was previously set
+     *         true, otherwise
+     */
+    fun isPositionEmpty(index: Int): Boolean {
+        if(positions[index] == 0){
+            return true
+        }
+
+        return false
+    }
+
+    fun setPlayerPosition(index: Int) {
+        setPosition(index, 1)
+    }
+
+    fun setEnemyPosition(index: Int){
+        setPosition(index, 2)
     }
 
     public fun getState(): GameState {

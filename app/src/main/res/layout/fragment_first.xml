@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".FirstFragment" android:background="@color/pink">
+        tools:context=".ui.NumberFragment" android:background="@color/pink">
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -40,14 +40,5 @@
                 android:layout_marginBottom="128dp" android:layout_marginEnd="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
         />
-        <ImageButton
-                android:src="@drawable/download"
-                android:layout_width="86dp"
-                android:layout_height="79dp" android:id="@+id/ticTacToeButton"
-                android:scaleType="fitCenter"
-                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="46dp"
-                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
-                android:layout_marginEnd="277dp" app:layout_constraintEnd_toEndOf="parent"
-                android:contentDescription="@string/tic_tac_toe"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

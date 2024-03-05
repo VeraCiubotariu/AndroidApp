@@ -2,8 +2,9 @@
     <string name="app_name">My First App</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">My First App</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="first_fragment_label">Number Generator</string>
+    <string name="second_fragment_label">TicTacToe</string>
+    <string name="main_menu_label">Welcome!</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="counter">0</string>
@@ -11,6 +12,8 @@
     <string name="count">COUNT</string>
     <string name="random">RANDOM</string>
     <string name="tic_tac_toe">TicTacToe</string>
+    <string name="minigames">MINIGAMES</string>
+    <string name="number_gen">Number Generator</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris volutpat, dolor id
