@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FirstFragment" android:background="@color/pink">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp" android:id="@+id/layout">
+        <TextView
+                android:text="@string/counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView"
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.498" android:textSize="96sp" android:textColor="@color/white"/>
+        <Button
+                android:text="@string/toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/toastButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="128dp" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="30dp"/>
+        <Button
+                android:text="@string/count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/countButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="128dp" android:layout_marginStart="30dp"
+                app:layout_constraintStart_toEndOf="@+id/toastButton"
+                app:layout_constraintEnd_toStartOf="@+id/randomButton" android:layout_marginEnd="30dp"/>
+        <Button
+                android:text="@string/random"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/randomButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="128dp" android:layout_marginEnd="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+        />
+        <ImageButton
+                android:src="@drawable/download"
+                android:layout_width="86dp"
+                android:layout_height="79dp" android:id="@+id/ticTacToeButton"
+                android:scaleType="fitCenter"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="46dp"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+                android:layout_marginEnd="277dp" app:layout_constraintEnd_toEndOf="parent"
+                android:contentDescription="@string/tic_tac_toe"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
